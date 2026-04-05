@@ -8,7 +8,9 @@
 go mod init <module-name>
 ```
 
-### Necessary setup for SSH Agent (In Host)
+
+## Necessary setup for SSH Agent
+### Start SSH Agent (In Host)
 ```bash
 eval "$(ssh-agent -s)"
 ```
