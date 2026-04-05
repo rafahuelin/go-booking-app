@@ -7,6 +7,12 @@
     "features": {
         "ghcr.io/nils-geistmann/devcontainers-features/zsh:0.0.8": {}
     },
+    "mounts": [
+        "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,consistency=cached,type=bind"
+    ],
+    "remoteEnv": {
+        "SSH_AUTH_SOCK": "/ssh-agent"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
