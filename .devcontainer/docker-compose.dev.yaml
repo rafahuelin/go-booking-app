@@ -4,6 +4,9 @@ services:
     command: /bin/sh -c "mkdir -p /app && sleep infinity"
     volumes:
       - ./../:/app
+      - ${SSH_AUTH_SOCK}:/ssh-agent
+    environment:
+      SSH_AUTH_SOCK: /ssh-agent
     cap_add:
       - SYS_PTRACE
     security_opt:
