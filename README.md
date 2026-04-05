@@ -25,3 +25,9 @@ ssh-add ~/.ssh/id_rsa
 ```bash
 ls -al $SSH_AUTH_SOCK
 ```
+
+### Add to ~/.bashrc or ~/.zshrc (In Host)
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
