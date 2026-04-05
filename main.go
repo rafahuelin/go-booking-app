@@ -14,9 +14,8 @@ func main() {
 
 	var userName string
 	var userTickets int
-	// ask user for their name
+	fmt.Scan(&userName)
 
-	userName = "Tom"
 	userTickets = 2
 	fmt.Printf("User %v took %v tickets", userName, userTickets)
 }
