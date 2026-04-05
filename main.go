@@ -12,12 +12,22 @@ func main() {
 	fmt.Printf("We have a total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets here to attend.")
 
-	var userName string
+	var firstName string
+	var lastName string
+	var email string
 	var userTickets int
 
-	fmt.Println("Enter your name:")
-	fmt.Scan(&userName)
+	fmt.Println("Enter your first name:")
+	fmt.Scan(&firstName)
 
-	userTickets = 2
-	fmt.Printf("User %v took %v tickets", userName, userTickets)
+	fmt.Println("Enter your last name:")
+	fmt.Scan(&lastName)
+
+	fmt.Println("Enter your email address:")
+	fmt.Scan(&email)
+
+	fmt.Println("Enter number of tickets:")
+	fmt.Scan(&userTickets)
+
+	fmt.Printf("User %v %v with email %v took %v tickets", firstName, lastName, email, userTickets)
 }
