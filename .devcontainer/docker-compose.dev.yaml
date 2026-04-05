@@ -1,0 +1,10 @@
+services:
+  booking-app:
+    image: mcr.microsoft.com/devcontainers/go:1.25-trixie
+    command: /bin/sh -c "mkdir -p /app && sleep infinity"
+    volumes:
+      - ./../:/app
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined

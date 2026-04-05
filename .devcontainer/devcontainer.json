@@ -1,0 +1,22 @@
+{
+    "dockerComposeFile": "./docker-compose.dev.yaml",
+    "name": "booking-app",
+    "service": "booking-app",
+    "workspaceFolder": "/app",
+    "remoteUser": "vscode",
+    "features": {
+        "ghcr.io/nils-geistmann/devcontainers-features/zsh:0.0.8": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.Go",
+                "usernamehw.errorlens"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "postCreateCommand": "mkdir -p /app && go install github.com/go-delve/delve/cmd/dlv@latest"
+}
