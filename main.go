@@ -14,6 +14,8 @@ func main() {
 
 	var userName string
 	var userTickets int
+
+	fmt.Println("Enter your name:")
 	fmt.Scan(&userName)
 
 	userTickets = 2
